@@ -170,14 +170,11 @@ int main(int argc, char** argv)
 	// Get the points from the output polydata
 	vtkPoints* outputPoints = outputPolyData->GetPoints();
 
-	// Create your own sampling points by selecting points from the output
+	// Create sampling points by selecting points from the output
 	vtkPoints* samplingPoints = vtkPoints::New();
-	// Here you can specify the indices of the points you want to sample from the outputPoints
-
 	for (int i = 0; i < (outputPoints->GetNumberOfPoints()); i += 1) {
 		samplingPoints->InsertNextPoint(outputPoints->GetPoint(i));
 	}
-	// Add more sampling points as needed
 
 	// Create a polydata to store the sampling points
 	vtkPolyData* samplingPolyData = vtkPolyData::New();
