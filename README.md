@@ -5,7 +5,7 @@ To run the code:
 
 2. Create a new folder named "build" inside the flowVisSample folder.
 
-3. Open CMake, set the **source code location** to the **flowVisSample folder** and the **location to build the binaries** to the **build folder**, then click configure. Make sure to set the VTK_DIR to the path of the installed VTK bin for example **"your-path-to-vtk/bin"**. After configure, click generate to generate the project file.
+3. Open CMake, set the **source code location** to the **flowVisSample folder** and the **location to build the binaries** to the **build folder**, then click configure. Make sure to set the **VTK_DIR** to the path of the installed VTK bin for example **"your-path-to-vtk/bin"**. After configure, click generate to generate the project file.
 
 4. Go to build folder, open the flowVisSample.sln using Visual Studio.
 
