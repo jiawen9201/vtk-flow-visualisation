@@ -216,7 +216,7 @@ int main(int argc, char** argv)
 
 	// Initialize the event loop and then start it.
 	iren->Initialize();
-	renWin->SetWindowName("Glyph Sampling");
+	renWin->SetWindowName("Streamline with Glyph Sampling Points");
 	renWin->Render();
 	iren->Start();
 
